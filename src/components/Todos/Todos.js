@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 
-import {Todo} from "../Todoe/Todoe";
+import {Todo} from "../Todo/Todo";
 
 function Todos () {
       const [todos, setTodos] = useState([]);

@@ -1,5 +1,6 @@
 export * from "./Home/Home"
 export * from "./Todos/Todos"
 export * from   "./Comments/Comments"
-export * from "./CommentsDetail/CommentsDetail"
+export * from "./CommentDetail/CommentDetail"
 export * from   "./Albums/Albums"
+export * from "./Posts/Posts"

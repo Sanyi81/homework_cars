@@ -1,9 +1,9 @@
 import './App.css';
 import {
-  BrowserRouter, Routes, Route, Link, Outlet
+  Route, Link, Routes
 } from "react-router-dom";
 
-import {Albums, Comments, CommentsDetail, Home, Todos} from "./components";
+import {Albums, CommentDetail, Comments, Home, Todos} from "./components";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
             <Route path={'todos'} element={<Todos/>}/>
             <Route path={'albums'} element={<Albums/>}/>
             <Route path={'comments'} element={<Comments/>}>
-                <Route path={'?postId=:id'} element={<CommentsDetail/>}/>
+                <Route path={'/comments/:id'} element={<CommentDetail/>}/>
             </Route>
           </Routes>
         <hr/>
