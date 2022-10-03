@@ -1,11 +1,11 @@
-import './App.css';
+import {Cat, Dog} from "./components";
 
-import {Cars} from "./components";
 
 function App() {
   return (
       <div>
-    <Cars/>
+            <Cat/>
+            <Dog/>
     </div>
   );
 }
