@@ -1,5 +1,7 @@
 import {useReducer, useRef} from "react";
 
+import css from "./App.css"
+
 const reducer = (state, action) => {
     const {type, payload} = action;
 
@@ -38,8 +40,9 @@ const reducer = (state, action) => {
         }
 
   return (
-      <div>
-          <div className={'cats'}>
+      <div className={'main'}>
+          <div>
+          <div>
               <label>Cats name: <input type="text" ref={catInput}/></label>
               <button onClick={createCat}>Save</button>
           </div>
@@ -51,7 +54,7 @@ const reducer = (state, action) => {
           </div>))
           }
 
-          <div className={'dogs'}>
+          <div>
               <label>Dogs name: <input type="text" ref={dogInput}/></label>
               <button onClick={createDog}>Save</button>
           </div>
@@ -62,6 +65,7 @@ const reducer = (state, action) => {
                   <button onClick={() => dispatch({type: 'deleteDog', payload: dog.id})}>Delete</button>
               </div>))
           }
+      </div>
     </div>
   )
 }
