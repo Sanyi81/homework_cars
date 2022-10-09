@@ -1,5 +1,9 @@
-const baseURL = 'http://owu.linkpc.net/api/v2';
+const baseURL = 'https://jsonplaceholder.typicode.com';
 
-const urls = {cars: '/cars'};
+const urls = {
+    users: '/users',
+    posts: '/posts',
+    comments: '/comments'
+};
 
 export {baseURL, urls};
